@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- <link rel="Stylesheet" href="blogs.css"> -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+
+
+    <title>Document</title>
+    <!-- <style>
+        .eg{
+            background-image: url('img/Apple\ Macbook\ Pro\ 13_\ Silver.png');
+            background-repeat: no-repeat;
+        }
+
+.video {
+    width: 400px;
+    height: 250px;
+    background: linear-gradient(rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url('img/image\ 56.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.videoBack {
+    background-image: url('img/Vector\ \(12\).png');
+}
+
+.play-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(47, 162, 47);
+    color: #fff;
+    font-size: 50px;
+    width: 100px;
+    height: 100px;
+    z-index: 2;
+    border-radius: 100%;
+    position: relative;
+}
+
+.play-btn:before {
+    content: '';
+    position: absolute;
+    border: 15px solid #fff;
+    border-radius: 50%;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    animation: bloom1 1.5s linear infinite;
+    opacity: 0;
+    z-index: 1;
+}
+
+.play-btn:after {
+    content: '';
+    position: absolute;
+    border: 15px solid #fff;
+    border-radius: 50%;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    animation: bloom2 6.5s linear infinite;
+    opacity: 0;
+    animation-delay: .4s;
+    z-index: 1;
+}
+
+@keyframes bloom1 {
+    0% {
+        transform: scale(.5);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+@keyframes bloom2 {
+    0% {
+        transform: scale(.5);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+.trustedClients {
+    background-color: #F4FBFF;
+    padding: 70px;
+}
+    </style> -->
+    <style>
+     .video {
+    width: 400px;
+    height: 250px;
+    background: url('img/Component\ 130\ \(1\).png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.videoBack {
+    
+}
+
+.play-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(47, 162, 47);
+    color: #fff;
+    font-size: 20px;
+    width: 50px;
+    height: 40px;
+    z-index: 2;
+    border-radius: 50%;
+    position: relative;
+    left: 25px;
+    bottom: 10px;
+}
+
+.play-btn:before {
+    content: '';
+    position: absolute;
+    border: 15px solid #fff;
+    border-radius: 50%;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    animation: bloom1 1.5s linear infinite;
+    opacity: 0;
+    z-index: 1;
+}
+
+.play-btn:after {
+    content: '';
+    position: absolute;
+    border: 15px solid #fff;
+    border-radius: 50%;
+    top: -20px;
+    left: -20px;
+    right: -20px;
+    bottom: -20px;
+    /* animation: bloom2 6.5s linear infinite; */
+    opacity: 0;
+    animation-delay: .4s;
+    z-index: 1;
+}
+
+@keyframes bloom1 {
+    0% {
+        transform: scale(.5);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+@keyframes bloom2 {
+    0% {
+        transform: scale(.5);
+    }
+
+    50% {
+        opacity: 1;
+    }
+
+    100% {
+        transform: scale(1.5);
+    }
+}
+
+.trustedClients {
+    background-color: #F4FBFF;
+    padding: 70px;
+}
+    </style>
+
+</head>
+
+<body>
+    <!-- <div class="trustedClients mt-5">
+        <div class="text-center">
+            <h5 class="text-success">OUR TRUSTED CLIENTS</h5>
+            <h3 class="mb-5">Leading Companies Trust Us To Develope Software</h3>
+        </div>
+        <div>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia odit deleniti inventore qui saepe
+            harum. Perferendis nemo vitae voluptatem repudiandae alias quo sequi necessitatibus quia sit doloremque,
+            minima voluptatum est modi sed tenetur esse, tempore quod hic aut voluptas obcaecati.
+        </div>
+        <div class="videoBack">
+            <div class="video mx-auto mt-5">
+                <div class="play-btn">
+                    <ion-icon name="play"></ion-icon>
+                </div>
+            </div>
+        </div>
+        <div class="eg">
+            <img src="img/image 56 (1).png" class="w-25">
+        </div>
+    </div> -->
+
+    <!-- <div class="container mainContainer">
+        <div class="haveaProject mt-5">
+            <div class="row mx-auto container">
+                <div class="col-md-3 hi">
+                    <h3 class="doYouHaveaProject">Do You Have a Project in Mind?</h3>
+                    <p class="loremDoYouHave">Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium veritatis quidem nisi eum quisquam placeat mollitia. Aperiam officia hic consequuntur!</p>
+                    
+                </div>
+                <div class="col-md-3">
+
+                </div>
+                <div class="col-md-3">
+
+                </div>
+                <div class="col-md-3">
+                    <button class="mt-2 p-2 getAQuoteProject">Get a Quote</button>
+                </div>
+            </div>
+        </div>
+    </div> -->
+    <div class="videoBack">
+        <div class="video mx-auto mt-5">
+            <div class="play-btn">
+                <ion-icon name="play"></ion-icon>
+            </div>
+        </div>
+    </div>
+   
+</body>
+
+</html>
